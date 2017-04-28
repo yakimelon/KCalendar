@@ -9,5 +9,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NotifyControl notify = new NotifyControl(this);
+        notify.sendNotification("通知テスト", "通知タイトル", "通知出る？");
+
     }
 }
